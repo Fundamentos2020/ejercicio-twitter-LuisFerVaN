@@ -3,24 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <title>Twitter</title>
 </head>
 <body>
     <div>
-        <h1>Local Storage</h1>
+        <div  class="col-m-12 col-s-12">
+            <h1 style="text-align: center;">Local Storage</h1>
+        </div>
         <div>
-            <div>
-                <form action="#">
-                    <label for="tweet">Tweet:</label>
-                    <textarea name="tweet"></textarea>
+            <div class="col-m-6 col-s-12">
+                <form action="#" id="formulario">
+                    <label for="tweet" style="font-weight: bold;">Tweet:</label>
+                    <br>
+                    <textarea name="tweet" id="tweet" maxlength="240" class="col-s-11 col-m-8"></textarea>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                     <button>Agregar</button>
                 </form>
             </div>
-            <div>
+            <div class="col-m-6 col-s-12">
                 <h2>Mis Tweets</h2>
                 <div></div>
+                <div id="MisTweets"></div>
             </div>
+        </div>
+        <div class="col-s-12 col-m-12 text-center container piePag" id="pieDePag">
+            {281467} - {Luis Fernando Vazquez Nieto}
         </div>
     </div>
 
